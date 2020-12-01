@@ -3,13 +3,15 @@ name: skr_pro
 on:
   schedule:
     # At 12:15 each day. No idea what time zone this is...
-    - cron:  '15 12 * * *'
+    #- cron:  '15 12 * * *'
   push:
     branches:
     - main
+    - sn0wfa11
   pull_request:
     branches:
     - main
+    - sn0wfa11
     paths-ignore:
     - src/configs/V1*Archim*
     - src/configs/V1*Rambo*
